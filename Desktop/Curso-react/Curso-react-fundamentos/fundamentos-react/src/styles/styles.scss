@@ -1,0 +1,142 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+*,
+*:after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.conteiner{
+    display: flex;
+    justify-content: center;
+    &-curso{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 500px;
+    }
+}
+
+.banner{
+    display: flex;
+    width:100%;
+    background-image: url('https://wallpapercave.com/wp/aLUDwDa.jpg');
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+    &-button{
+       width: 10%;
+       padding: 1rem;
+       margin: 1rem;
+       border-radius: 30px;
+       color: white;
+       background: lightseagreen;
+       font-size:1.5rem;
+    }
+    &-text{
+        color: lightslategrey;
+        font-size: 3rem;
+        font-style: bold;
+    }
+}
+
+.conteiner-cards{
+    display: flex;
+    justify-content: center;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 10px;
+    height: 400px;
+    box-shadow: 0 0 15px #ddd;
+    
+    &-poster{
+        height: 200px;
+        width: 350px;
+    }
+
+    &-title{
+        font-size: 1.2rem;
+    }
+
+    &-teacher{
+        display: flex;
+        align-items: center;
+        &_img {
+            width:36px;
+            height: 36px;
+            border-radius: 20px;
+            margin-right: 5px;
+        }
+    }
+
+    &-button{
+        color: red;
+        border:1px solid red;
+        background: white;
+        width: 30%;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 10px;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+    &-boton{
+        background: lightseagreen;
+        color: #ddd;
+        padding: 1rem;
+        align-self: center;
+        margin: 5px;
+    }
+}
+
+.main-menu {
+    display: flex;
+    justify-content: flex-end;
+    &_links{
+        display: flex;
+        width: 400px;
+        height: 50px;
+        text-decoration: none;
+    }
+
+    &_item{
+        padding: 10px;
+        list-style: none;
+    }
+    &_content{
+        text-decoration: none;
+    }
+
+}
+
+
